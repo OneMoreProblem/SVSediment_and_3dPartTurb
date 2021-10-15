@@ -60,7 +60,7 @@ Application of different approaches to visualize hydrodynamic fields of internal
 
 Internal waves are may be the most common types of waves in oceans, since even if the ocean surface seems to be calm, the deep-ocean waves \cite{1966MunkAbyssalRecipes,Munk1998} are always present\footnote{Gravity waves in the ocean's interior are as common as waves at the sea surface\,--\,perhaps even more so, for no one has ever reported an interior calm~\cite{2005Munk9IW}}. Oceanologists, biologists, ecologists, and technician have specific  interests in the study of internal waves. This phenomenon is partly responsible for the vertical mixing of the stratified fluids, the migration of living organisms, the redistribution of energy in the ocean, and the propagation of various kinds of impurities and pollution.
 
-Despite a great diversity of experimental approaches for visualisation of weakly compressible flows (\cite{znamenskaya2021methods388562176,2014SutherlandDuaxoisPeacockIWinLE}), the experiments are often bounded by the possibility to assess some interesting propriety at certain time location. Concerning the internal attractors and accompanying phenomena, remarkable advantages have been achieved since 199X. Besides the successful application of traditional approaches based on synthetic schlieren, particle image velocimetry (PIV) and laser-induced fluorescence (LIF) , some methods based on signal analysis, which traditionally were applied to electromagnetic fields, showed remarkable relevance for description of the internal or inertial wave dynamics. Meanwhile the time and space resolution of these methods is limited, and sometimes the laboratory data do not allow to reconstruct the hydrodynamic fields: 
+Despite a great diversity of experimental approaches for visualisation of weakly compressible flows \cite{znamenskaya2021methods388562176,2014SutherlandDuaxoisPeacockIWinLE}, the experiments are often bounded by the possibility to assess some interesting propriety at certain time location. Concerning the internal attractors and accompanying phenomena, remarkable advantages have been achieved since 199X. Besides the successful application of traditional approaches based on synthetic schlieren, particle image velocimetry (PIV) and laser-induced fluorescence (LIF) , some methods based on signal analysis, which traditionally were applied to electromagnetic fields, showed remarkable relevance for description of the internal or inertial wave dynamics. Meanwhile the time and space resolution of these methods is limited, and sometimes the laboratory data do not allow to reconstruct the hydrodynamic fields: 
 
 Internal wave appear as a result of violation of stably stratified fluid. 
 One of the major sources of perturbation, resulting in internal waves, is the tidal effect produced by the orbital motions of the Moon and the Sun. These global flows interact with the ocean bottom irregularities and generate internal waves. The very special feature of the internal waves is that in case of constant stratification the angle of the wave beams and the law of reflection are defined by the dispersion relation:
@@ -78,56 +78,57 @@ Due to these properties internal waves can be focused upon reflection from the o
 
 The great interest is the result of the consecutive reflections. It can be obtained by the monochromatic excitation of the internal waves in the closed domain with the oblique boundaries, the simplest example of which is the rectangular trapezoid.
 
-If the internal waves beams propagate in trapezoid tank, focusing occurs continuously and all the wave beams converge to closed trajectory. The simplest one is the rhomboid trajectory with four reflection points (Fig. \ref{fig:dominleft}).
+If the internal waves beams propagate in trapezoid tank, focusing occurs continuously and all the wave beams converge to closed trajectory. The simplest one is the rhomboid trajectory with four reflection points (Fig. \ref{fig:Domain}).
 
 %  \flashleft
 \begin{figure}[!Ht]
     % \centering
     %\flashleft
-                \hspace{-1.8cm}
+    \hspace{-1.8cm}
     \begin{minipage}[t]{0.45\textwidth}
-    \begin{tikzpicture}[scale=1.5, z={(-.707,-.5)}]
-    \draw (3.6,0,0) -- (0,0,0) -- (0,4,0)--(6,4,0)--(3.6,0,0);
-    %\draw (3.6,0,0) -- (3.6,0,-1) -- (6,4,-1) -- (6,4,0) -- cycle;
-    %\draw (6,4,0) -- (0,4,0) -- (0,4,-1) -- (6,4,-1);
-     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Temp.png}};
-    \draw (-0.5,2,0) node{};
-    \draw (4.1,-.2,-1.5) node{};
-    \draw [white] (3,3.8,0) node{$\rho_l = 1040$};
-    \draw (1.8,2.1) node{$\rho_p = 1080$};
-    \draw (3.1,2.1) node{$\rho_l = 1060$};
-    \draw (2,0.2,0) node{$\rho_l = 1080$};
-    \draw[<->] (-0.1,0) --node[above,rotate=90] {$H$} (-0.1,4);
-    \draw[<->] (0,4.1,0) --node[above,] {$L_1$} (6,4.1,0);
-    \draw[<->] (0,-0.1,0) --node[below,] {$L_2$} (3.7,-0.1,0);
-    \draw [white, thick] (5.5,4) arc [start angle=180, end angle=240, radius=0.5cm]
+        \begin{tikzpicture}[scale=1.5, z={(-.707,-.5)}]
+            \draw (3.6,0,0) -- (0,0,0) -- (0,4,0)--(6,4,0)--(3.6,0,0);
+            %\draw (3.6,0,0) -- (3.6,0,-1) -- (6,4,-1) -- (6,4,0) -- cycle;
+            %\draw (6,4,0) -- (0,4,0) -- (0,4,-1) -- (6,4,-1);
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Temp.png}};
+            \draw (-0.5,2,0) node{};
+            \draw (4.1,-.2,-1.5) node{};
+            \draw [white] (3,3.8,0) node{$\rho_l = 1040$};
+            \draw (1.8,2.1) node{$\rho_p = 1080$};
+            \draw (3.1,2.1) node{$\rho_l = 1060$};
+            \draw (2,0.2,0) node{$\rho_l = 1080$};
+            \draw[<->] (-0.1,0) --node[above,rotate=90] {$H$} (-0.1,4);
+            \draw[<->] (0,4.1,0) --node[above,] {$L_1$} (6,4.1,0);
+            \draw[<->] (0,-0.1,0) --node[below,] {$L_2$} (3.7,-0.1,0);
+            \draw [white, thick] (5.5,4) arc [start angle=180, end angle=240, radius=0.5cm]
         node [left] {$\alpha$};
-    \draw[thick,->] (4.5,0.2,0) -- (5.5,0.2,0) node[anchor=north east]{$x$};
-    \draw[thick,->] (4.5,0.2,0) -- (4.5,1+0.2,0) node[anchor=north west]{$z$};
-    \draw[white,thick,->] (0,4.05,0) -- (1.5,2.8,0) ;
-    \draw[thick,dotted] (0,2,0)--(4.8,2,0);
-    \draw [white, thick] (0.0,3.5) arc [start angle=270, end angle=270+53, radius=0.5cm] node [below] {$\theta$}; 
-    \end{tikzpicture}
-    % \caption{Initial distribution of density. $\rho_l$ -- density of liquid, $\rho_l$ -- density of particles, $\theta = \arcsin \frac{\omega}{N}$, where $\omega$ is frequency of wavemaker and $N$ is the buoyancy frequency.}
+            \draw[thick,->] (4.5,0.2,0) -- (5.5,0.2,0) node[anchor=north east]{$x$};
+            \draw[thick,->] (4.5,0.2,0) -- (4.5,1+0.2,0) node[anchor=north west]{$z$};
+            \draw[white,thick,->] (0,4.05,0) -- (1.5,2.8,0) ;
+            \draw[thick,dotted] (0,2,0)--(4.8,2,0);
+            \draw [white, thick] (0.0,3.5) arc [start angle=270, end angle=270+53, radius=0.5cm] node [below] {$\theta$}; 
+        \end{tikzpicture}
+    \subcaption{Initial distribution of density. $\rho_l$ -- density of liquid, $\rho_l$ -- density of particles, $\theta = \arcsin \frac{\omega}{N}$, where $\omega$ is frequency of wavemaker and $N$ is the buoyancy frequency.}
     \label{fig:domainup}
-    \end{minipage}
+        \end{minipage}
 % \end{figure}
 ~~~~
 % \begin{figure}[b]
- \centering
-    \begin{minipage}[t]{0.45\textwidth}
- \begin{tikzpicture}[scale=1.5]
-    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (-0.2,0.0) -- (-0.2,4.1) node[rotate=90,above] [black,midway,xshift=-0,yshift=10] { Wavemaker};
-     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Dom.png}};
+    \centering
+        \begin{minipage}[t]{0.45\textwidth}
+        \begin{tikzpicture}[scale=1.5]
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (-0.2,0.0) -- (-0.2,4.1) node[rotate=90,above] [black,midway,xshift=-0,yshift=10] { Wavemaker};
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Dom.png}};
 %     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.5265\textwidth]{Figs/Dom.png}};
-     \draw[thick,<->] (-0.1,0) --node[above,rotate=90]{$H$} (-0.1,4.1);
-     \draw[thick,<->] (0,-0.1) --node[below          ]{$L_2$} (3.8,-0.1);
-     \draw[thick,<->] (0,4.2) --node[above          ]{$L_1$} (6.2,4.2);
-     \draw [black, thick] (5.75,4.1) arc [start angle=180, end angle=270, radius=0.25cm];
- \end{tikzpicture}
-%  \caption{Principal scheme of the vessel}
- \label{fig:Domain}
+            \draw[thick,<->] (-0.1,0) --node[above,rotate=90]{$H$} (-0.1,4.1);
+            \draw[thick,<->] (0,-0.1) --node[below          ]{$L_2$} (3.8,-0.1);
+            \draw[thick,<->] (0,4.2) --node[above          ]{$L_1$} (6.2,4.2);
+            \draw [black, thick] (5.75,4.1) arc [start angle=180, end angle=270, radius=0.25cm];
+        \end{tikzpicture}
+    \subcaption{Principal scheme of the vessel}
+    \label{fig:Domain}
     \end{minipage}
+    \caption{Scheme of computational domain for 2D attractor of internal waves. Initial destribution of density (a), and predicted with linear theory shape of attractor (b).}
 \end{figure}
 
 %\begin{figure}[!ht]
@@ -204,7 +205,7 @@ Equations \ref{eq:cont}--\ref{eq:tr} solve by finite volume method and open sour
 
 \section{Post-processing and data analysis}
 
-All data was collected using native openFoam functionObjects and processed by python-scripts. Fields was visualised by open-source, multi-platform data analysis and visualization application paraview \cite{paraview}.
+All data was collected using native openFoam functionObjects and processed by python-scripts. Fields was visualised by open-source, multi-platform data analysis and visualization application paraview \cite{paraview}. Scratches and schemes 
 
 \subsection{2D statement}
 
@@ -285,7 +286,26 @@ The simulation is of interest for two reasons: sedimentation process before part
     \caption{Sedimentation in reservoir with turbulent regime of internal waves attractor}
 \end{figure}
 
-Numerical experiment shown that particles slow fall and redistribute (Fig. \ref{fig:turbSed2Da}). Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed2Db}).
+Numerical experiment shown that particles slow fall and redistribute (Fig. \ref{fig:turbSed2Da}). Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed2Db}) after a long time of simulation ($1000-2000\ s$).
+
+Changing of experemint condition for amplitude of wamaket to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
+
+\begin{figure}
+\centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+    %\animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{000}{159}
+        \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
+        \label{fig:turbSed2Da}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \animategraphics[autoplay,loop,scale=0.125]{10}{Figs/AttrctorSlipLaminarSediment/}{013}{052}
+        \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
+        \label{fig:turbSed2Db}
+    \end{minipage}
+    \caption{Sedimentation in reservoir with turbulent regime of internal waves attractor}
+\end{figure}
 
 \subsection{3D local wavemaker}
 
@@ -338,8 +358,8 @@ Numerical experiment shown that particles slow fall and redistribute (Fig. \ref{
             \draw[thick,->] (6,3,0) -- (6,1,0) node[anchor=west]{$\vec{g}$};
           \end{tikzpicture}
           
-        \caption{Illustration of 3D domain with local wavemaker}
-          
+        \caption{Illustration of 3D domain with local wavemaker in numerical experiment $H=0.4\ m$, $L_1 = 0.6\ m$, $L_2 = 0.39\ m$, $K=0.08 \ m$.}
+        \label{fig:3DLocSctarch}
         \end{figure}
 
 \begin{figure}[!Ht]
@@ -357,6 +377,7 @@ Numerical experiment shown that particles slow fall and redistribute (Fig. \ref{
         \label{fig:3DTurbEnd}
     \end{minipage}
     \caption{Life cycle of internal waves attractor from stability to chaos. Color visualisation of velocity horizontal component. Flare in reservoir is a interprocessors interfaces painted in salinity colorbar where $1$ is a blue and $2$ is a red. Wall with wave maker has a different color scale: from $-0.001\,m/s$ to $0.001\,m/s$.}
+    \label{fig:3DLocTurbRes}
 \end{figure}
 
 
