@@ -248,18 +248,37 @@ Visualisation of velocity field was provided by paraview software \cite{paraview
 
 As the one of main method of flow motions analysis time-frequency diagram which shows dynamic of spectrum is considered (Fig. \ref{fig:tfd11}-\ref{fig:tfdX}). In fact it is the Fourier-transform made with a sliding window in dependence on window's position. Hence, vertical slices of the diagram are spectra at neighbourhood of time moment $t$, so one can trace the evolution of the spectrum. At the beginning of motion fluid has one clear frequency, but then attractor destruction leads to the generation of secondary waves and contamination of the spectrum, that appears as a noising background on the diagram. 
 
+% \begin{figure}
+% \begin{multicols}{2}
+%     \centering
+%     \includegraphics[width=0.55\textwidth]{Figs/TFBG14.png}
+%     \caption{Time-frequency diagram of superharmonics presence ($a=1.4\;mm$)}
+%     \label{fig:tfd11}
+%     \hfill
+%      \includegraphics[width=0.55\textwidth]{Figs/TFD_pos34693_nperseg400_to0T.png}
+%     \caption{Time-frequency diagram of attractor destruction ($a=3.0\;mm$)}
+%     \label{fig:tfdX}
+% \end{multicols}
+% \end{figure}
+
+
 \begin{figure}
-\begin{multicols}{2}
-    \centering
-    \includegraphics[width=0.55\textwidth]{Figs/TFBG14.png}
-    \caption{Time-frequency diagram of superharmonics presence ($a=1.4\;mm$)}
-    \label{fig:tfd11}
-    \hfill
-     \includegraphics[width=0.55\textwidth]{Figs/TFD_pos34693_nperseg400_to0T.png}
-    \caption{Time-frequency diagram of attractor destruction ($a=3.0\;mm$)}
-    \label{fig:tfdX}
-\end{multicols}
+\centering
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.15\textwidth]{Figs/TFBG14.png}
+        \subcaption[fir]{Time-frequency diagram of superharmonics presence ($a=1.4\;mm$)}
+        \label{fig:tfd11}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.15\textwidth]{Figs/TFD_pos34693_nperseg400_to0T.png}
+        \subcaption[sec]{Time-frequency diagram of attractor destruction ($a=3.0\;mm$)}
+        \label{fig:tfdX}
+    \end{minipage}
+    \caption{Time-frequency diagrams}
 \end{figure}
+
 
 Figures \ref{fig:tfd11}-\ref{fig:tfdX} illustrate dependence of time-frequency diagrams on the forcing amplitude (colorbar shows the ratio of $\lg\left(\frac{TF}{\text{max} (TF)}\right)$ in order to normalize the maximum to 0).  If the amplitude is not high enough, spectrum almost doesn't evolve and has discrete peaks; with its increase spectrum becomes continuous and fluctuates with the time, which indicates the complete transition to the turbulent regime.
 
@@ -273,13 +292,15 @@ The simulation is of interest for two reasons: sedimentation process before part
 \centering
     \begin{minipage}[t]{0.45\textwidth}
         \centering
-    %\animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{000}{159}
+    %\animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{001}{159}
+    \animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{001}{002}
         \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
         \label{fig:turbSed2Da}
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
         \centering
     %\animategraphics[autoplay,loop,scale=0.125]{10}{Figs/2DSedTurbEnd/AnimationRho1080C0r01mmslip.7}{013}{052}
+    \animategraphics[autoplay,loop,scale=0.125]{10}{Figs/2DSedTurbEnd/AnimationRho1080C0r01mmslip.7}{013}{014}
         \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
         \label{fig:turbSed2Db}
     \end{minipage}
@@ -295,14 +316,14 @@ Changing of experemint condition for amplitude of wamaket to $A_1$ leads to the 
     \begin{minipage}[t]{0.45\textwidth}
         \centering
         
-        %\animategraphics[autoplay,loop,scale=0.125]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{159}
+        %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{159}
         \animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{001}
         \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
         \label{fig:turbSed2Da}
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
         \centering
-        %\animategraphics[autoplay,loop,scale=0.125]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{79}
+        %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{79}
         \animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{41}
         \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
         \label{fig:turbSed2Db}
