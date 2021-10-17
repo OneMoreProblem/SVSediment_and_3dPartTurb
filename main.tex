@@ -25,6 +25,7 @@
 \usepackage{caption}
 
 \usepackage{tikz}
+\usepackage{float}
 \usetikzlibrary{decorations.pathreplacing}
 
 \title{\textbf{Methods of visualisation for flows with internal waves attractors}}
@@ -60,10 +61,10 @@ Application of different approaches to visualize hydrodynamic fields of internal
 
 Internal waves are may be the most common types of waves in oceans, since even if the ocean surface seems to be calm, the deep-ocean waves \cite{1966MunkAbyssalRecipes,Munk1998} are always present\footnote{Gravity waves in the ocean's interior are as common as waves at the sea surface\,--\,perhaps even more so, for no one has ever reported an interior calm~\cite{2005Munk9IW}}. Oceanologists, biologists, ecologists, and technician have specific  interests in the study of internal waves. This phenomenon is partly responsible for the vertical mixing of the stratified fluids, the migration of living organisms, the redistribution of energy in the ocean, and the propagation of various kinds of impurities and pollution.
 
-Despite a great diversity of experimental approaches for visualisation of weakly compressible flows \cite{znamenskaya2021methods388562176,2014SutherlandDuaxoisPeacockIWinLE}, the experiments are often bounded by the possibility to assess some interesting propriety at certain time location. Concerning the internal attractors and accompanying phenomena, remarkable advantages have been achieved since 199X. Besides the successful application of traditional approaches based on synthetic schlieren, particle image velocimetry (PIV) and laser-induced fluorescence (LIF) , some methods based on signal analysis, which traditionally were applied to electromagnetic fields, showed remarkable relevance for description of the internal or inertial wave dynamics. Meanwhile the time and space resolution of these methods is limited, and sometimes the laboratory data do not allow to reconstruct the hydrodynamic fields: 
+Despite a great diversity of experimental approaches for visualisation of weakly compressible flows \cite{znamenskaya2021methods388562176,2014SutherlandDuaxoisPeacockIWinLE}, the experiments are often bounded by the possibility to assess some interesting propriety at certain time location. Concerning the internal attractors and accompanying phenomena, remarkable advantages have been achieved since 199X. Besides the successful application of traditional approaches based on synthetic schlieren, particle image velocimetry (PIV) and planar laser-induced fluorescence (PLIF) , some methods based on signal analysis, which traditionally were applied to electromagnetic fields, showed remarkable relevance for description of the internal or inertial wave dynamics. Meanwhile the time and space resolution of these methods is limited, and sometimes the laboratory data do not allow to reconstruct the hydrodynamic fields, in~\cite{2014LeePaolettiSwinneyMorrisonExperDeterIWpower}
 
-Internal wave appear as a result of violation of stably stratified fluid. 
-One of the major sources of perturbation, resulting in internal waves, is the tidal effect produced by the orbital motions of the Moon and the Sun. These global flows interact with the ocean bottom irregularities and generate internal waves. The very special feature of the internal waves is that in case of constant stratification the angle of the wave beams and the law of reflection are defined by the dispersion relation:
+Internal wave appear as a result of perturbations of stably stratified fluid. 
+One of the major sources of the external forcing, resulting in internal waves, is the tidal effect produced by the orbital motions of the Moon and the Sun. These global flows interact with the ocean bottom irregularities and generate internal waves. The very special feature of the internal waves is that in case of constant stratification the angle of the wave beams and the law of reflection are defined by the dispersion relation:
 $$\frac{\omega}{N} = \sin(\theta),$$
 where $\omega$ is the forcing frequency determined by external forcing on the fluid; 
 $N$~-- buoyancy frequency.
@@ -76,21 +77,21 @@ Due to these properties internal waves can be focused upon reflection from the o
 % Аттракторы внутренних волн
 % картинка с резервуаром
 
-The great interest is the result of the consecutive reflections. It can be obtained by the monochromatic excitation of the internal waves in the closed domain with the oblique boundaries, the simplest example of which is the rectangular trapezoid.
+The great interest is the result of the consecutive reflections. It can be obtained by the monochromatic excitation of the internal waves in the closed domain with the oblique boundaries, the simplest example of which is the trapeze with one inclined boundary.
 
-If the internal waves beams propagate in trapezoid tank, focusing occurs continuously and all the wave beams converge to closed trajectory. The simplest one is the rhomboid trajectory with four reflection points (Fig. \ref{fig:Domain}).
+If the internal waves beams propagate in trapezoid tank, focusing occurs continuously and all the wave beams converge to closed trajectory. The simplest one is a parallelogram with four reflection points located at the sides of the trapeze (Fig.~\ref{fig:Domain}).
 
 %  \flashleft
-\begin{figure}[!Ht]
+\begin{figure}[!ht]
     % \centering
     %\flashleft
-    \hspace{-1.8cm}
+    \hspace{-0.7cm}
     \begin{minipage}[t]{0.45\textwidth}
         \begin{tikzpicture}[scale=1.5, z={(-.707,-.5)}]
             \draw (3.6,0,0) -- (0,0,0) -- (0,4,0)--(6,4,0)--(3.6,0,0);
             %\draw (3.6,0,0) -- (3.6,0,-1) -- (6,4,-1) -- (6,4,0) -- cycle;
             %\draw (6,4,0) -- (0,4,0) -- (0,4,-1) -- (6,4,-1);
-            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Temp.png}};
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.13\textwidth]{Figs/Temp.png}};
             \draw (-0.5,2,0) node{};
             \draw (4.1,-.2,-1.5) node{};
             \draw [white] (3,3.8,0) node{$\rho_l = 1040$};
@@ -110,15 +111,14 @@ If the internal waves beams propagate in trapezoid tank, focusing occurs continu
         \end{tikzpicture}
     \subcaption{Initial distribution of density. $\rho_l$ -- density of liquid, $\rho_l$ -- density of particles, $\theta = \arcsin \frac{\omega}{N}$, where $\omega$ is frequency of wavemaker and $N$ is the buoyancy frequency.}
     \label{fig:domainup}
-        \end{minipage}
+        \end{minipage}~~~~%
 % \end{figure}
-~~~~
 % \begin{figure}[b]
-    \centering
-        \begin{minipage}[t]{0.45\textwidth}
-        \begin{tikzpicture}[scale=1.5]
+\hspace{0.5cm}
+\begin{minipage}[t]{0.45\textwidth}
+        \begin{tikzpicture}[scale=1.45]
             \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (-0.2,0.0) -- (-0.2,4.1) node[rotate=90,above] [black,midway,xshift=-0,yshift=10] { Wavemaker};
-            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.15\textwidth]{Figs/Dom.png}};
+            \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.13\textwidth]{Figs/Dom.png}};
 %     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=0.5265\textwidth]{Figs/Dom.png}};
             \draw[thick,<->] (-0.1,0) --node[above,rotate=90]{$H$} (-0.1,4.1);
             \draw[thick,<->] (0,-0.1) --node[below          ]{$L_2$} (3.8,-0.1);
@@ -148,15 +148,20 @@ If the internal waves beams propagate in trapezoid tank, focusing occurs continu
 %    \label{fig:dominleft}
 %\end{figure}
 
-For the first time the phenomenon of wave attractors was described by Leo Maas \cite{Maas1995} who studied the convergence of wave beams while considering different geometries.
+For the first time the phenomenon of wave attractors was described by Leo Maas \cite{Maas1995,1997MaasBenielliSommeriaLam} who studied the convergence of wave beams in different geometries.
 
-First attempts of numerical study~\cite{2008GrisouardStaquetPairaud} of internal wave attractors successfully reproduced qualitatively the 2D structure of internal wave attractors in trapezoidal domains, though quantitatively the velocity amplitude was too high  as compared with the experiment. 3D numerical simulations~\cite{2016BrouzetSibgatullinScolanErmanyukDauxois,2016BrouzetErmanyukJoubaudSibgatullinDauxois} resolved this problem through estimation of viscosity and boundary layers effects.
+First attempts of numerical study~\cite{2008GrisouardStaquetPairaud} of internal wave attractors successfully reproduced qualitatively the 2D structure of internal wave attractors in trapezoidal domains, though quantitatively the velocity amplitude was too high  as compared with the experiment. 3D numerical simulations~\cite{2016BrouzetSibgatullinScolanErmanyukDauxois,2016BrouzetErmanyukJoubaudSibgatullinDauxois} resolved this discrepancy through estimation of dissipation and boundary layers effects.
 
-In this paper we apply the before-mentioned methods for numerical results, and discuss the other methods, which are difficult to assess in the experiments.
+In this paper we apply the before-mentioned methods for  results numerical of numerical experiments, and discuss the other methods, which are difficult to assess in the experiments.
 
-\section{Problem statement and solution methods}
+% \section{Problem statement and solution methods}
+\section{Numerical setup}
 
-For the stratified fluid dynamic simulation quasihydrodynamic equations were used \cite{ElizarBook}: 
+Laboratory and numerical study of linear and nonlinear dynamics of wave attractors in three-dimensional setup showed a good agreement in terms of major hydrodynamic properties both in laminar and turbulent regimes \cite{2016BrouzetSibgatullinScolanErmanyukDauxois,2016BrouzetErmanyukJoubaudSibgatullinDauxois}. High order spectral element approach, which was used in these simulations is still hard to adopt for multi-phase flows. In this study we consider the processes of sedimentation, and numerical simulation with the help of quasihydrodynamic  approach\cite{ElizarBook,SherBook}.
+
+% For the stratified fluid dynamic simulation quasihydrodynamic equations were used \cite{ElizarBook}: 
+
+Equations for mass, momentum, and salinity transport and diffusion in quasihydrodynamic approach can be written in the following form \cite{ElizarBook}:
 
  \begin{equation}
      \nabla \cdot \left (\vec U - \vec W \right ) = 0,
@@ -169,23 +174,22 @@ For the stratified fluid dynamic simulation quasihydrodynamic equations were use
       = - \frac{1}{\rho_m} \nabla \hat p + \vec F,
       \label{eq:mom}
  \end{equation}
-     
  \begin{equation}
      \frac{\partial s}{\partial t} + \nabla \cdot \left ( (\vec U - \vec W)s \right )
      - \nabla \cdot \frac{\nu}{Sc} \left ( \nabla s \right )=0.
      \label{eq:tr}
  \end{equation}
+\noindent
+where  
+%\noindent
+reduced pressure $\hat p = p - p_0$, restoring force $\vec{F}=\beta \vec{g} \hat s$, $\hat s = s(x, y, z, t) - s(x, y, z, 0)$,
+$\displaystyle \vec W = \tau \left ( \vec U \cdot \nabla \vec U + \frac{1}{\rho_m} \nabla \hat p - \vec F  \right )$.
 
+Geometrically the computational domain is a rectangular trapeze, with the wavemaker located at the left wall, as in the experiments~\cite{2013ScolanErmanyukDauxois,2016BrouzetSibgatullinScolanErmanyukDauxois}.
 
-Additional velocity:  $$\vec W = \tau \left ( \vec U \cdot \nabla \vec U + \frac{1}{\rho_m} \nabla \hat p - \vec F  \right ),$$\\
+% Velocity boundary conditions on wavemaker depends on problem being solved.
 
-reduced pressure $\hat p = p - p_0$; restorative force: $\vec{F}=\beta \vec{g} \hat s$, where $\hat s = s(x, y, z, t) - s(x, y, z, 0).$
-
-Geometrically the computational domain is the rectangular trapeze, on the left wall of which a wavemaker is situated. The letter one makes oscillations. 
-
-Velocity boundary conditions on wavemaker depends on problem being solved.
-
-Boundary conditions on static walls:
+Boundary conditions at the fixed walls:
 
 \begin{equation}\label{eq:qhd_walls}
         \vec{U} = 0, \,\,\, \frac{\partial \tilde p}{ \partial \vec{n}} = \rho_0 \vec n \cdot \left ( -\vec U_b \cdot \nabla \vec U + \vec F \right), \,\,\, \frac{\partial s}{ \partial \vec{n}} = 0.
@@ -196,55 +200,62 @@ The initial conditions for a passive scalar are chosen so that the buoyancy freq
 \begin{equation}
     N(z) = \sqrt{- \frac{g}{\rho_m}\cdot\frac{d \rho(z)}{dz}} = 1,
 \end{equation}
+\noindent
+where $\rho(z) = \rho_m(1+\beta s)$, $\rho_m$ is minimal density,  and $\beta$ -- coefficient of salinity contraction. 
 
-where $\rho(z) = \rho_m(1+\beta s)$  and $\beta$ -- coefficient of salinity contraction. 
-
-
-
-Equations \ref{eq:cont}--\ref{eq:tr} solve by finite volume method and open source code OpenFOAM v2012 with QHDFoam solver \cite{QGDFOam}
+Equations (\ref{eq:cont}--\ref{eq:tr}) were approximated with the help of finite volume method and open source code OpenFOAM v2012 with QHDFoam solver \cite{QGDFOam}
 
 \section{Post-processing and data analysis}
 
-All data was collected using native openFoam functionObjects and processed by python-scripts. Fields was visualised by open-source, multi-platform data analysis and visualization application paraview \cite{paraview}. Scratches and schemes 
+The results of numerical simulation were approximated at a regular rectangular grid with the help of openFoam functionObject and processed by python scripts. Hydrodynamic fields were visualised with the help of open-source, multi-platform data analysis and visualization platform paraview \cite{paraview}. 
+% Scratches and schemes 
 
-\subsection{2D statement}
+% \subsection{Two-dimensional simulations}
 
-As the calculation results, it is expected that internal waves will concentrate in the zone of attraction (fig.~\ref{fig:Domain}). In this case $H = 0.4 \; m$, $L_1=0.6 \; m$, $L_2 = 0.39 \; m$.
+Parameters of the simulation are chosen to be close to the corresponding laboratory experiments.
+As follows from the theoretical predictions and laboratory experiments, it is expected that internal waves energy will concentrate in the zone of attraction (fig.~\ref{fig:Domain}). 
 
-As boundary conditions on wavemaker:
+Geometry of the tank filled with salty water is given by: $H = 0.4 \; m$, $L_1=0.6 \; m$, $L_2 = 0.39 \; m$.
+The bouyancy frequncy $N=1$.
+
+Boundary conditions at the left wall with the wavemaker read:
 
 \begin{equation}
-    U_x = A\cdot cos\left(\frac{\pi \cdot z}{H}\right)\cdot \omega \cdot  sin(\omega_0 t),
+    U_x = a\cdot cos\left(\frac{\pi \cdot z}{H}\right)\cdot \omega_0 \cdot  sin(\omega_0 t),
     \label{eq:wmc}
 \end{equation}
-where $A = 0.003 \; m$, $\omega = 0.63 \; s^{-1}$.
+where $a = 0.003 \; m$, $\omega_0 = 0.63 \; s^{-1}$.
 
-For the further representation we will use herebelow wavemaker frequency $f_0=\tfrac{\omega_0}{2\pi}$ and corresponding period $T_0=f_0^{-1}$. 
-Dynamic of velocity fluids field over time can be spit in two smooth parts.
+In the figures below we will use wavemaker frequency $\displaystyle f_0=\frac{\omega_0}{2\pi}$ and corresponding period $T_0=f_0^{-1}$. 
 
-Part of attractor formation (Fig. \ref{fig:LamAttr}). Internal waves reflect from slope wall and aim to attractor with increasing own aplitude.
+% Dynamic of velocity fluids field over time can be spit in two smooth parts.
 
-Part of attractor destruction (Fig. \ref{fig:turbAttr}). Gradually amplitude grows so much that the waves begin to overturn and generate child waves.
+% Part of attractor formation (Fig. \ref{fig:LamAttr}). Internal waves reflect from slope wall and aim to attractor with increasing own aplitude.
 
-\begin{figure}
+% Part of attractor destruction (Fig. \ref{fig:turbAttr}). Gradually amplitude grows so much that the waves begin to overturn and generate child waves.
+
+\begin{figure}[h!]
 \centering
     \begin{minipage}[t]{0.45\textwidth}
         \centering
             %\animategraphics[autoplay,loop,scale=0.21]{10}{Figs/2DAttractorForm/300x200a03w0623.0}{180}{200}
-            \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
+            \animategraphics[autoplay,loop,scale=0.25]{10}{Figs/2DAttractorForm/300x200a03w0623.0}{180}{181}
+            \subcaption[fir]{Internal waves attractor formation $t=0\,s$ to $t=80\,s$}
         \label{fig:LamAttr}
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
         \centering
             %\animategraphics[autoplay,loop,scale=0.21]{10}{Figs/2DAttractorDest/300x200a03w0623.7}{160}{199}
-            \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
+            \animategraphics[autoplay,loop,scale=0.25]{10}{Figs/2DAttractorDest/300x200a03w0623.7}{160}{161}
+            \subcaption[sec]{Internal waves attractor destruction $t=3590 \,s$ to $t=3600$}
         \label{fig:turbAttr}
     \end{minipage}
-    \caption{Horizontal component of velocity field with internal wave focusing}
+    \caption{Horizontal component of velocity field with internal wave focusing which leads from attractor forming (from 0 to 10 wavemaker periods) to stability (from 10 to 50 oscilation periods) and further (from 50 and belong) to attractor destruction}
+    \label{fig:2dAttr}
 \end{figure}
 
 
-Visualisation of velocity field was provided by paraview software \cite{paraview}. The pictures \ref{fig:LamAttr} and \ref{fig:turbAttr} show horizontal component.
+Visualisation of velocity field was provided by open-source software paraview  \cite{paraview}. In figure \ref{fig:2dAttr} the horizontal component is shown. 
 
 As the one of main method of flow motions analysis time-frequency diagram which shows dynamic of spectrum is considered (Fig. \ref{fig:tfd11}-\ref{fig:tfdX}). In fact it is the Fourier-transform made with a sliding window in dependence on window's position. Hence, vertical slices of the diagram are spectra at neighbourhood of time moment $t$, so one can trace the evolution of the spectrum. At the beginning of motion fluid has one clear frequency, but then attractor destruction leads to the generation of secondary waves and contamination of the spectrum, that appears as a noising background on the diagram. 
 
@@ -286,117 +297,132 @@ Figures \ref{fig:tfd11}-\ref{fig:tfdX} illustrate dependence of time-frequency d
 
 One of the important problems is a simulation of low inertial particles sedimentation. Distribution of density in  the reservoir is linear from $1040\;\frac{kg}{m^3}$ to $1080\;\frac{kg}{m^3}$, at the center of the reservoir puts spherical particles with density $\rho_p = 1080;\frac{kg}{m^3}$ and diameter $d=0.001 \; m$.  Number of particles is 301 over horizontal middle line (Fig. \ref{fig:domainup}). Particles are carried away by the flow, but do not affect it and one another.
 
-The simulation is of interest for two reasons: sedimentation process before particles touch the bottom and distribution process after sedimentation. Numerical experiment was carried out in two different statements for wavemaker conditions (\ref{eq:wmc}) with $A_1=0.05e^{-2}\;m$ -- regime of stable attractor without destruction and child waves and $A_2=0.003\;m$ turbulent attractor of internal waves from previous subsection. 
-
-\begin{figure}
+\begin{figure}[h!]
 \centering
     \begin{minipage}[t]{0.45\textwidth}
         \centering
-    %\animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{001}{159}
-    \animategraphics[autoplay,loop,scale=0.12]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{001}{002}
+    %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/2DSedTurbBegin/AnimationRho1080C0r01mmslip.0}{001}{159}
+    \animategraphics[autoplay,loop,scale=0.21]{10}{Figs/2DSedTurbBegin/AnimationRho10800r01mmslip.0}{000}{002}
         \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
         \label{fig:turbSed2Da}
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
         \centering
-    %\animategraphics[autoplay,loop,scale=0.125]{10}{Figs/2DSedTurbEnd/AnimationRho1080C0r01mmslip.7}{013}{052}
-    \animategraphics[autoplay,loop,scale=0.125]{10}{Figs/2DSedTurbEnd/AnimationRho1080C0r01mmslip.7}{013}{014}
+    %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/2DSedTurbEnd/AnimationRho1080C0r01mmslip.7}{013}{052}
+    \animategraphics[autoplay,loop,scale=0.21]{10}{Figs/2DSedTurbEnd/AnimationRho10800r01mmslip.7}{013}{014}
         \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
         \label{fig:turbSed2Db}
     \end{minipage}
     \caption{Sedimentation in reservoir with turbulent regime of internal waves attractor}
+    \label{fig:turbSed}
 \end{figure}
 
-Numerical experiment shown that particles slow fall and redistribute (Fig. \ref{fig:turbSed2Da}). Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed2Db}) after a long time of simulation ($1000-2000\ s$).
+The simulation is of interest for two reasons: sedimentation process before particles touch the bottom and distribution process after sedimentation. Numerical experiment was carried out in two different statements for wavemaker conditions (\ref{eq:wmc}) with $A_1=0.05e^{-2}\;m$ -- regime of stable attractor without destruction and child waves and $A_2=0.003\;m$ turbulent attractor of internal waves from previous subsection. 
 
-Changing of experemint condition for amplitude of wamaket to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
-
-\begin{figure}
+\begin{figure}[h!]
 \centering
     \begin{minipage}[t]{0.45\textwidth}
         \centering
         
         %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{159}
-        \animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{001}
+        \animategraphics[autoplay,loop,scale=0.21]{10}{Figs/AttrctorSlipLaminarSediment/SlipLam.0}{000}{001}
         \subcaption[fir]{Sedimentation from $t=0\,s$ to $t=80\,s$}
         \label{fig:turbSed2Da}
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
         \centering
         %\animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{79}
-        \animategraphics[autoplay,loop,scale=0.2]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{41}
+        \animategraphics[autoplay,loop,scale=0.21]{10}{Figs/AttrctorSlipLaminarMid/SlipLam.07}{40}{41}
         \subcaption[sec]{Redistribution from $t=3590 \,s$ to $t=3600$}
         \label{fig:turbSed2Db}
     \end{minipage}
     \caption{Sedimentation in reservoir with turbulent regime of internal waves attractor}
 \end{figure}
 
+Numerical experiment shown that particles slow fall and redistribute. Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed}) after a long time of simulation ($1000-2000\ s$).
+
+Changing of experiment condition for amplitude of wavemaker to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
+
+
+
 \subsection{3D local wavemaker}
 
+Focusing of internal waves occurs in three-dimensional mode. Waves propagate across three directions and after numerous reflections concentrates about attractors surface, which can be obtained from 2D mode by stretching along the direction perpendicular to the plane of the tank. 
 
-        \begin{figure}
-        \centering
-          \begin{tikzpicture}[scale=1.5, every node/.style={scale=1.2}]
-            \filldraw[top color=red, bottom color=blue] (0,0,0)--(0,0,0.4)--(0,4,0.4)--(0,4,0)--cycle;
-            
-            \draw (0,4,0.0) -- (6,4,0.0)-- (3.9,0,0.0);
-            \draw (3.9,0,0.8) -- (0,0,0.8) -- (0,4,0.8) -- (6,4,0.8) -- cycle;
-             
-            \draw (0,4,0) -- (0,4,0.8);
-            
-            \draw (3.9,0,0) -- (3.9,0,0.8);
-            \draw (6,4,0) -- (6,4,0.8);
-    
-            % \draw[style=dashed, color=gray] (6,0,-3) -- (0,0,-3) -- (0,4,-3);
-            \draw[style=dashed, color=gray] (0,0,0) -- (0,0,1.5);
-            \draw[style=dashed, color=gray] (3.9,0,0.8) -- (3.9,0,1.5);
-            
-            \draw[style=dashed, color=gray] (0,4,0) -- (0,4,-1.);
-            \draw[style=dashed, color=gray] (6,4,0.8) -- (6,4,-1.);
-            
-            \draw[stealth-stealth] (0,4,-0.5)--node[above]{$L_1$}(6,4,-0.5);
-            
-            \draw[stealth-stealth] (0,0,1.3)--node[below]{$L_2$}(3.9,0,1.3);
-            
-            \draw[style=dashed, color=gray] (0,0,0) -- (3.9,0,0);
-            
-            \draw[style=dashed, color=gray] (6,4,0.8) -- (7,4,0.8);
-            \draw[style=dashed, color=gray] (6,4,0.0) -- (7,4,0.0);
-            \draw[stealth-stealth] (7,4,0.8)--node[below,rotate=50]{K}(7,4,0.0);
-            % \draw (-0.5,2,0) node{};
-            % \draw (4.1,-.2,-3.5) node{};
-            % \draw (3.5,5,0) node{};
-            \draw[stealth-stealth] (-0.2,0,0.8) --node[above,rotate=90] {$H$} (-0.2,4,0.8);
-            \draw[style=dashed, color=gray] (-0.3,0,0.8) -- (0.0,0,0.8);
-            \draw[style=dashed, color=gray] (-0.3,4,0.8) -- (0.0,4,0.8);
-            
-            
-            % \draw[<->] (0,4.1,-3) --node[above,] {$L_1 = 0.369$ m} (4,4.1,-3);
-            % \draw[<->] (6.05,-0.05,0) --node[below,rotate=37] {$W = 0.3$ m} (6.05,-0.05,-3);
-            % \draw[<->] (0,-0.1,0) --node[below,] {$L_2 = 0.6$ m} (6,-0.1,0);
-            % \draw [black, thick] (3.75,4) arc [start angle=180, end angle=300, radius=0.25cm]
-            % node [anchor = south west] {$120^\circ$};
-            \draw[thick,->] (4.8,0.05,0) -- (5.8,0.05,0) node[anchor=north east]{$x$};
-            \draw[thick,->] (4.8,0.05,0) -- (4.8,1.05,0) node[anchor=east]{$z$};
-            \draw[thick,->] (4.8,0.05,0) -- (4.8,0.05,-1) node[anchor=south]{$y$};
-            \draw[thick,->] (6,3,0) -- (6,1,0) node[anchor=west]{$\vec{g}$};
-          \end{tikzpicture}
-          
-        \caption{Illustration of 3D domain with local wavemaker in numerical experiment $H=0.4\ m$, $L_1 = 0.6\ m$, $L_2 = 0.39\ m$, $K=0.08 \ m$.}
-        \label{fig:3DLocSctarch}
-        \end{figure}
+This effect is especially remarkable if the wavemaker takes up only half of the left wall (Fig. \ref{fig:3DLocSctarch}). For saving total energy incoming to the system one need to increase wavemaker amplitude for (\ref{eq:wmc}) $A=0.006\ m$. Size in $X-Z$-plane same as 2D case, 3D reservoir has $0.08\ m$ along $Y$ direction. Walls has a slip condition for velocity and pressure.
 
-\begin{figure}[!Ht]
+ 
+
+
+\begin{figure}
+    \centering
+      \begin{tikzpicture}[scale=1.5, every node/.style={scale=1.2}]
+        \filldraw[top color=red, bottom color=blue] (0,0,0)--(0,0,0.4)--(0,4,0.4)--(0,4,0)--cycle;
+        
+        \draw (0,4,0.0) -- (6,4,0.0)-- (3.9,0,0.0);
+        \draw (3.9,0,0.8) -- (0,0,0.8) -- (0,4,0.8) -- (6,4,0.8) -- cycle;
+         
+        \draw (0,4,0) -- (0,4,0.8);
+        
+        \draw (3.9,0,0) -- (3.9,0,0.8);
+        \draw (6,4,0) -- (6,4,0.8);
+
+        % \draw[style=dashed, color=gray] (6,0,-3) -- (0,0,-3) -- (0,4,-3);
+        \draw[style=dashed, color=gray] (0,0,0) -- (0,0,1.5);
+        \draw[style=dashed, color=gray] (3.9,0,0.8) -- (3.9,0,1.5);
+        
+        \draw[style=dashed, color=gray] (0,4,0) -- (0,4,-1.);
+        \draw[style=dashed, color=gray] (6,4,0.8) -- (6,4,-1.);
+        
+        \draw[stealth-stealth] (0,4,-0.5)--node[above]{$L_1$}(6,4,-0.5);
+        
+        \draw[stealth-stealth] (0,0,1.3)--node[below]{$L_2$}(3.9,0,1.3);
+        
+        \draw[style=dashed, color=gray] (0,0,0) -- (3.9,0,0);
+        
+        \draw[style=dashed, color=gray] (6,4,0.8) -- (7,4,0.8);
+        \draw[style=dashed, color=gray] (6,4,0.0) -- (7,4,0.0);
+        \draw[stealth-stealth] (7,4,0.8)--node[below,rotate=50]{K}(7,4,0.0);
+        % \draw (-0.5,2,0) node{};
+        % \draw (4.1,-.2,-3.5) node{};
+        % \draw (3.5,5,0) node{};
+        \draw[stealth-stealth] (-0.2,0,0.8) --node[above,rotate=90] {$H$} (-0.2,4,0.8);
+        \draw[style=dashed, color=gray] (-0.3,0,0.8) -- (0.0,0,0.8);
+        \draw[style=dashed, color=gray] (-0.3,4,0.8) -- (0.0,4,0.8);
+        
+        
+        % \draw[<->] (0,4.1,-3) --node[above,] {$L_1 = 0.369$ m} (4,4.1,-3);
+        % \draw[<->] (6.05,-0.05,0) --node[below,rotate=37] {$W = 0.3$ m} (6.05,-0.05,-3);
+        % \draw[<->] (0,-0.1,0) --node[below,] {$L_2 = 0.6$ m} (6,-0.1,0);
+        % \draw [black, thick] (3.75,4) arc [start angle=180, end angle=300, radius=0.25cm]
+        % node [anchor = south west] {$120^\circ$};
+        \draw[thick,->] (4.8,0.05,0) -- (5.8,0.05,0) node[anchor=north east]{$x$};
+        \draw[thick,->] (4.8,0.05,0) -- (4.8,1.05,0) node[anchor=east]{$z$};
+        \draw[thick,->] (4.8,0.05,0) -- (4.8,0.05,-1) node[anchor=south]{$y$};
+        \draw[thick,->] (6,3,0) -- (6,1,0) node[anchor=west]{$\vec{g}$};
+      \end{tikzpicture}
+      
+    \caption{Illustration of 3D domain with local wavemaker in numerical experiment $H=0.4\ m$, $L_1 = 0.6\ m$, $L_2 = 0.39\ m$, $K=0.08 \ m$.}
+    \label{fig:3DLocSctarch}
+\end{figure}
+
+With addition third dimension simulation problem complicated significantly. There are difficulties in visualizing a three-dimensional velocity field. For showing destruction of internal waves attractor paraview filter 'threshold' was used. It allows to see values from gap and detect areas with intensive motion (Fig. \ref{fig:3DLocTurbRes}). Emptiness is proposed to fill in salinity field with interprocess patches (glares). And finally with 'slice' filter select closest to wavemaker area for visualisation of wavemaker motion. 
+
+
+
+\begin{figure}[!ht]
 \centering
     \begin{minipage}{0.45\textwidth}
         \centering
             %\animategraphics[autoplay,loop,scale=0.11]{10}{Figs/3DPartTurbAttr6/3dTurbPartA6.00}{01}{40}
+            \animategraphics[autoplay,loop,scale=0.11]{10}{Figs/3DPartTurbAttr6/3dTurbPartA6.00}{01}{02}
             \subcaption[f]{Stable phase of internal waves attractor for local wavemaker from $t=150\,s$ to $t=170\,s$}
         \label{fig:3DTurbBegin}
     \end{minipage}
     \begin{minipage}{0.45\textwidth}
         \centering
             %\animategraphics[autoplay,loop,scale=0.11]{10}{Figs/3DPartTurbAttr6/3dTurbPartA6.02}{59}{99}
+            \animategraphics[autoplay,loop,scale=0.11]{10}{Figs/3DPartTurbAttr6/3dTurbPartA6.02}{59}{60}
             \subcaption[s]{Turbulisation of internal waves attrctor with local wavemaker from $t=280\,s$ to $t=300\,s$}
         \label{fig:3DTurbEnd}
     \end{minipage}
@@ -404,13 +430,14 @@ Changing of experemint condition for amplitude of wamaket to $A_1$ leads to the 
     \label{fig:3DLocTurbRes}
 \end{figure}
 
+Visual analysis of simulation show internal waves attractors destruction procedure. The attractor is formed in the period from 0 to 10 oscillation periods, then from 10 to 30 oscillation periods stable and attractor structure is observed and finally from 30 to 300 and belong difference of velocities become too big that waves overturn and incoming energy produce secondary waves.
 
 
 \subsection{Vortices visualisation}
 
 Vortices visualisation is a new way to visualize turbulent motions structure. For this purpose we use different methods.
 
-The simplest attempt is to consider vorticity \cite{vortex}, fig.~\ref{fig:vorticity}: $$\omega=|\textrm{rot}\,\vec{v}|$$
+The simplest attempt is to consider vorticity \cite{vortex} (Fig.~\ref{fig:vorticity}): $$\omega=|\textrm{rot}\,\vec{v}|$$
 It is quick and simple method that however can yield false-positive identification. For instance, Couette flow will be identified as homogeneous vortex since its curl is constant over the domain.
 
 Another method is so-called $\Delta$-method \cite{vortex}. Let us consider eigenvalue problem for velocity gradient tensor $A=\nabla\otimes  \vec v$:
@@ -436,7 +463,7 @@ $ \Delta > 0  \Leftrightarrow  D < 0$ means the presence of two complex-conjugat
 The problem arises in 2-dimensional problem, where the equation has less order:
 $$\lambda^2+P\lambda+Q=0,$$
 
-discriminant $D=P^2-4Q$. Thus in 2D we will consider $-D\equiv 4Q-P^2$ as $\Delta$ (fig.~\ref{fig:Delta}).
+discriminant $D=P^2-4Q$. Thus in 2D we will consider $-D\equiv 4Q-P^2$ as $\Delta$ (Fig.~\ref{fig:Delta}).
 
 This method requires more computational resources than vorticity. It can be improved using $Q$-method \cite{vortex}\cite{Hussain}. Let's define:
 
@@ -509,14 +536,14 @@ Howbeit mentioned hereabove methods are aimed to visualize vortex regions, they 
 
 \section{Conclusions}
 
-Visualization cannot be spread on bread.
+
 
 \section{Acknowledgments}
 
 
 
 The work will done with the support of Russian Scientific Fund, grant RSF~19-11-00169.
-Authors thank T.G. Elizarova.
+Authors thank to Elizarova T. G.
 
 \bibliographystyle{ugost2008}
 \bibliography{rpz,internalwaves}
