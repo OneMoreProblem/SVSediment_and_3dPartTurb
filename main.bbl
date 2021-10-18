@@ -1,0 +1,219 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\iflanguage{russian}{\hbox
+  to.8em{--\hss--}}{\textemdash}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus
+  0.1em\fi
+\cyrdash\hskip.2em plus 0.1em\ignorespaces}
+\renewcommand{\newblock}{\ignorespaces}
+
+\bibitem{1966MunkAbyssalRecipes}
+\selectlanguageifdefined{english}
+\BibEmph{{Munk}~W.} {Abyssal recipes}~//
+  \href{http://dx.doi.org/10.1016/0011-7471(66)90602-4}{\BibEmph{Deep-Sea
+  Res.}} \BibDash
+\newblock 1966. \BibDash
+\newblock Vol.~13. \BibDash
+\newblock P.~707--730.
+
+\bibitem{Munk1998}
+\selectlanguageifdefined{english}
+\BibEmph{Munk~Walter, Wunsch~Carl}. Abyssal recipes {II}: energetics of tidal
+  and wind mixing~//
+  \href{http://dx.doi.org/10.1016/s0967-0637(98)00070-3}{\BibEmph{Deep Sea
+  Research Part I: Oceanographic Research Papers}}. \BibDash
+\newblock 1998. \BibDash Dec. \BibDash
+\newblock Vol.~45, no.~12. \BibDash
+\newblock P.~1977--2010. \BibDash
+\newblock Access mode: \BibUrl{https://doi.org/10.1016/s0967-0637(98)00070-3}.
+
+\bibitem{2005Munk9IW}
+\selectlanguageifdefined{english}
+\BibEmph{Munk~Walter~H.} 9 Internal Waves and Small-Scale Processes. \BibDash
+\newblock 2005.
+
+\bibitem{znamenskaya2021methods388562176}
+\selectlanguageifdefined{english}
+\BibEmph{Znamenskaya~I.~A.} Methods for Panoramic Visualization and Digital
+  Analysis of Thermophysical Flow Fields~//
+  \href{http://dx.doi.org/10.26583/sv.13.3.13}{\BibEmph{Scientific
+  Visualization}}. \BibDash
+\newblock 2021. \BibDash
+\newblock Vol.~13, no.~3. \BibDash
+\newblock P.~125--158.
+
+\bibitem{2014SutherlandDuaxoisPeacockIWinLE}
+\selectlanguageifdefined{english}
+\BibEmph{Sutherland~Bruce, Dauxois~Thierry, Peacock~Thomas}.
+  \href{http://dx.doi.org/https://doi.org/10.1002/9781118856024.ch10}{Internal
+  Waves in Laboratory Experiments}~// Modeling Atmospheric and Oceanic Flows.
+  \BibDash
+\newblock American Geophysical Union (AGU), 2014. \BibDash
+\newblock P.~193--212. \BibDash
+\newblock
+  ISBN:~\href{http://isbndb.com/search-all.html?kw=9781118856024}{9781118856024}.
+  \BibDash
+\newblock
+  \href{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/9781118856024.ch10}{https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/9781118856024.ch10}.
+
+\bibitem{2014LeePaolettiSwinneyMorrisonExperDeterIWpower}
+\selectlanguageifdefined{english}
+Experimental determination of radiated internal wave power without pressure
+  field data~/ Frank~M.~Lee, M.~S.~Paoletti, Harry~L.~Swinney,
+  P.~J.~Morrison~// \href{http://dx.doi.org/10.1063/1.4871808}{\BibEmph{Physics
+  of Fluids}}. \BibDash
+\newblock 2014. \BibDash
+\newblock Vol.~26, no.~4. \BibDash
+\newblock P.~046606. \BibDash
+\newblock
+  \href{https://doi.org/10.1063/1.4871808}{https://doi.org/10.1063/1.4871808}.
+
+\bibitem{Maas1995}
+\selectlanguageifdefined{english}
+\BibEmph{Maas~Leo R.~M., Lam~Frans-Peter~A.} Geometric focusing of internal
+  waves~// \href{http://dx.doi.org/10.1017/s0022112095003582}{\BibEmph{Journal
+  of Fluid Mechanics}}. \BibDash
+\newblock 1995. \BibDash Oct. \BibDash
+\newblock Vol. 300. \BibDash
+\newblock P.~1--41. \BibDash
+\newblock Access mode: \BibUrl{https://doi.org/10.1017/s0022112095003582}.
+
+\bibitem{1997MaasBenielliSommeriaLam}
+\selectlanguageifdefined{english}
+{Observation of an internal wave attractor in a confined, stably stratified
+  fluid}~/ L.~R.~M.~{Maas}, D.~{Benielli}, J.~{Sommeria}, F.-P.~A.~{Lam}~//
+  \href{http://dx.doi.org/10.1038/41509}{\BibEmph{Nature}}. \BibDash
+\newblock 1997. \BibDash Aug. \BibDash
+\newblock Vol. 388. \BibDash
+\newblock P.~557--561.
+
+\bibitem{2008GrisouardStaquetPairaud}
+\selectlanguageifdefined{english}
+\BibEmph{{Grisouard}~N., {Staquet}~C., {Pairaud}~I.} {Numerical simulation of a
+  two-dimensional internal wave attractor}~//
+  \href{http://dx.doi.org/10.1017/S002211200800325X}{\BibEmph{Journal of Fluid
+  Mechanics}}. \BibDash
+\newblock 2008. \BibDash Oct. \BibDash
+\newblock Vol. 614. \BibDash
+\newblock P.~1.
+
+\bibitem{2016BrouzetSibgatullinScolanErmanyukDauxois}
+\selectlanguageifdefined{english}
+Internal wave attractors examined using laboratory experiments and 3D numerical
+  simulations~/ Christophe~Brouzet, Ilias~Sibgatullin, Helene~Scolan et~al.~//
+  \BibEmph{Journal of Fluid Mechanics}. \BibDash
+\newblock 2016. \BibDash
+\newblock Vol. 793. \BibDash
+\newblock P.~109--131.
+
+\bibitem{2016BrouzetErmanyukJoubaudSibgatullinDauxois}
+\selectlanguageifdefined{english}
+Energy cascade in internal-wave attractors~/ Christophe~Brouzet,
+  Evgeny~Ermanyuk, Sylvain~Joubaud et~al.~// \BibEmph{EPL (Europhysics
+  Letters)}. \BibDash
+\newblock 2016. \BibDash
+\newblock Vol. 113, no.~4. \BibDash
+\newblock P.~44001.
+
+\bibitem{ElizarBook}
+\selectlanguageifdefined{english}
+\BibEmph{Elizarova~Tatiana~G.} Quasi-Gas Dynamic equations. \BibDash
+\newblock Springer, 2009. \BibDash
+\newblock
+  ISBN:~\href{http://isbndb.com/search-all.html?kw=978364200295}{978364200295}.
+
+\bibitem{SherBook}
+\selectlanguageifdefined{english}
+\BibEmph{Sheretov~Yurii~V.} Continuum Dynamics under Spatiotemporal Averaging.
+  \BibDash
+\newblock SPC Regular and Chaotic Dynamics. (Moscow-Izhevsk, 2009, in~Russian),
+  2009.
+
+\bibitem{2013ScolanErmanyukDauxois}
+\selectlanguageifdefined{english}
+\BibEmph{{Scolan}~H., {Ermanyuk}~E., {Dauxois}~T.} {Nonlinear Fate of Internal
+  Wave Attractors}~//
+  \href{http://dx.doi.org/10.1103/PhysRevLett.110.234501}{\BibEmph{Physical
+  Review Letters}}. \BibDash
+\newblock 2013. \BibDash Jun. \BibDash
+\newblock Vol. 110, no.~23. \BibDash
+\newblock P.~234501. \BibDash
+\newblock 1305.2691.
+
+\bibitem{QGDFOam}
+\selectlanguageifdefined{english}
+OpenFOAM framework for simulation of fluid flows using regularized (QGD/QHD)
+  equations approach. \BibDash
+\newblock \url{https://github.com/unicfdlab/QGDsolver}. \BibDash
+\newblock 2019.
+
+\bibitem{paraview}
+\selectlanguageifdefined{english}
+Open-source, multi-platform data analysis and visualization application.
+  \BibDash
+\newblock \url{https://https://www.paraview.org/}. \BibDash
+\newblock 2000.
+
+\bibitem{2018PilletErmanyukMaasSibgatDauxois}
+\selectlanguageifdefined{english}
+{Internal wave attractors in three-dimensional geometries: trapping by oblique
+  reflection}~/ G.~{Pillet}, E.~V.~{Ermanyuk}, L.~R.~M.~{Maas} et~al.~//
+  \href{http://dx.doi.org/10.1017/jfm.2018.236}{\BibEmph{Journal of Fluid
+  Mechanics}}. \BibDash
+\newblock 2018. \BibDash Jun. \BibDash
+\newblock Vol. 845. \BibDash
+\newblock P.~203--225. \BibDash
+\newblock 1805.04324.
+
+\bibitem{vortex}
+\selectlanguageifdefined{english}
+\BibEmph{Shrestha~P., C.~Nottage, Yu~Y. et~al.} Stretching and shearing
+  contamination analysis for Liutex and other vortex identification methods~//
+  \href{http://dx.doi.org/10.1186/s42774-020-00060-9}{\BibEmph{Advances in
+  Aerodynamics}}. \BibDash
+\newblock 2021. \BibDash
+\newblock no. 3(8). \BibDash
+\newblock Access mode: \BibUrl{https://doi.org/10.1186/s42774-020-00060-9}.
+
+\bibitem{Hussain}
+\selectlanguageifdefined{english}
+\BibEmph{Jeong~J., F.~Hussain}. On the identification of a vortex~//
+  \href{http://dx.doi.org/doi:10.1017/S0022112095000462}{\BibEmph{Journal of
+  Fluid Mechanics}}. \BibDash
+\newblock 1995. \BibDash
+\newblock Vol. 285. \BibDash
+\newblock P.~69--94.
+
+\bibitem{Unihub2014}
+\selectlanguageifdefined{english}
+\BibEmph{Samovarov~O.I., Gaysaryan~S.S.} The web-laboratory architecture based
+  on the cloud and the {UniHUB} implementation as an extension of the
+  {OpenStack} platform. \BibDash
+\newblock 2014. \BibDash
+\newblock Vol.~26, no.~1. \BibDash
+\newblock P.~403--420. \BibDash
+\newblock Access mode: \BibUrl{https://doi.org/10.15514/ispras-2014-26(1)-17}.
+
+\bibitem{scipy}
+\selectlanguageifdefined{english}
+{scipy} official website. \BibDash
+\newblock \url{https://www.scipy.org/}.
+
+\bibitem{matplotlib}
+\selectlanguageifdefined{english}
+{matplotlib} official github. \BibDash
+\newblock \url{https://github.com/matplotlib/matplotlib}.
+
+\bibitem{python}
+\selectlanguageifdefined{english}
+{python} official website. \BibDash
+\newblock \url{https://www.python.org/}.
+
+\end{thebibliography}
