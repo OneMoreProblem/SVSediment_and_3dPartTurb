@@ -298,7 +298,7 @@ Figures \ref{fig:tfd11}-\ref{fig:tfdX} illustrate dependence of time-frequency d
 
 One of the important problems with applications in oceanology  is sedimentation of low inertial particles and their interaction with internal waves. To describe qualitatively the influence of wave attractors on sedimentation of suspended particles we have made visualization for laminar and turbulent regimes of wave attractors. Density profile in  the reservoir is linear.
 % from $1040\;\frac{kg}{m^3}$ to $1080\;\frac{kg}{m^3}$, 
-At the middle horizontal line of the reservoir spherical particles with density $\rho_p = 1080;\frac{kg}{m^3}$ and diameter $d=0.001 \; m$ were uniformly distri.  Number of particles is 301 over horizontal middle line (Fig. \ref{fig:domainup}). Particles are carried away by the flow, but do not affect it and one another.
+At the middle horizontal line of the reservoir spherical particles with density $\rho_p = 1080;\frac{kg}{m^3}$ and diameter $d=0.001 \; m$ were uniformly distributed.  Number of particles is 301 over horizontal middle line (Fig. \ref{fig:domainup}). Particles are floating with the fluid, but in this simulation there is no feedback from the particles on the flow. Such a setup showed drastic differences in the sedimentation properties for laminar and turbulent wave attractors.
 
 \begin{figure}[h!]
 \centering
@@ -340,10 +340,12 @@ At the middle horizontal line of the reservoir spherical particles with density 
     \label{fig:turbSed}
 \end{figure}
 
-The simulation is of interest for two reasons: sedimentation process before particles touch the bottom and distribution process after sedimentation. Numerical experiment was carried out in two different statements for wavemaker conditions (\ref{eq:wmc}) with $A_1=0.05e^{-2}\;m$ -- regime of stable attractor without destruction and child waves and $A_2=0.003\;m$ turbulent attractor of internal waves from previous subsection. 
+Two questions arise: a) redistribution of the particles in the bulk flow before the particles approach the bottom, b) redistribution of the particles near the bottom.
 
+% The simulation is of interest for two reasons: sedimentation process before particles touch the bottom and distribution process after sedimentation. 
+Numerical experiments were carried out in two different regimes, corresponding to wavemaker (\ref{eq:wmc})  amplitudes $a_1=0.05e^{-2}\;m$ -- regime of stable attractor without wave instabilities, and $a_2=0.003\;m$ -- fully turbulent regime. 
 
-Numerical experiment shown that particles slow fall and redistribute. Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed}) after a long time of simulation ($1000-2000\ s$).
+Numerical experiment have shown that particles slow fall and redistribute. Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed}) after a long time of simulation ($1000-2000\ s$).
 
 Changing of experiment condition for amplitude of wavemaker to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
 
