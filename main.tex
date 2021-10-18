@@ -343,49 +343,47 @@ At the middle horizontal line of the reservoir spherical particles with density 
 Two questions arise: a) redistribution of the particles in the bulk flow before the particles approach the bottom, b) redistribution of the particles near the bottom.
 
 % The simulation is of interest for two reasons: sedimentation process before particles touch the bottom and distribution process after sedimentation. 
-Numerical experiments were carried out in two different regimes, corresponding to wavemaker (\ref{eq:wmc})  amplitudes $a_1=0.05e^{-2}\;m$ -- regime of stable attractor without wave instabilities, and $a_2=0.003\;m$ -- fully turbulent regime. 
+Numerical experiments were carried out in two different regimes, corresponding to wavemaker (\ref{eq:wmc})  amplitudes $a_1=0.0005\;m$ -- regime of stable attractor without wave instabilities, and $a_2=0.003\;m$ -- fully turbulent regime. 
 
-Numerical experiment have shown that particles slow fall and redistribute. Fallen particles concentrate about two attraction center at the bottom (Fig. \ref{fig:turbSed}) after a long time of simulation ($1000-2000\ s$).
+Numerical experiment have shown that particles experience oscillation while falling, and in laminar regime they continue to oscillate near the bottom. For the turbulent regime the long-time behaviour of the particles near the bottom is completely different: all the particles are attracted by two points at the bottom  (Fig. \ref{fig:turbSed}) ($1000-2000\ s$).
 
-Changing of experiment condition for amplitude of wavemaker to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
+% Changing of experiment condition for amplitude of wavemaker to $A_1$ leads to the fact that attractor do not redistribute particles after sedimentation. Also, the attractor is too weak to significantly influence to process of sedimentation.
 
+\subsection{Three-dimensional wavemaker}
 
+Three-dimensional setup may result in additional focusing along the transverse (spanwize) direction\cite{2018PilletErmanyukMaasSibgatDauxois}.
+Despite the fact that attractor may be located at only part of the left wall, the visualisation of numerical simulation in figures 7 (a,b) shows almost perfect two-dimensional structure. 
 
-\subsection{3D local wavemaker}
+% Focusing of internal waves occurs in three-dimensional mode before almost 2D structure is achieved. Waves propagate across three directions and after numerous reflections concentrates about attractors surface, which can be obtained from 2D mode by stretching along the direction perpendicular to the plane of the tank. 
 
-Focusing of internal waves occurs in three-dimensional mode. Waves propagate across three directions and after numerous reflections concentrates about attractors surface, which can be obtained from 2D mode by stretching along the direction perpendicular to the plane of the tank. 
-
-This effect is especially remarkable if the wavemaker takes up only half of the left wall (Fig. \ref{fig:3DLocSctarch}). For saving total energy incoming to the system one need to increase wavemaker amplitude for (\ref{eq:wmc}) $A=0.006\ m$. Size in $X-Z$-plane same as 2D case, 3D reservoir has $0.08\ m$ along $Y$ direction. Walls has a slip condition for velocity and pressure.
-
- 
-
+% This effect is especially remarkable if the wavemaker takes up only half of the left wall (Fig. \ref{fig:3DLocSctarch}). For saving total energy incoming to the system one need to increase wavemaker amplitude for (\ref{eq:wmc}) $A=0.006\ m$. Size in $X-Z$-plane same as 2D case, 3D reservoir has $0.08\ m$ along $Y$ direction. Walls has a slip condition for velocity and pressure.
 
 \begin{figure}
     \centering
       \begin{tikzpicture}[scale=1.5, every node/.style={scale=1.2}]
         \filldraw[top color=red, bottom color=blue] (0,0,0)--(0,0,0.4)--(0,4,0.4)--(0,4,0)--cycle;
-        
+%        
         \draw (0,4,0.0) -- (6,4,0.0)-- (3.9,0,0.0);
         \draw (3.9,0,0.8) -- (0,0,0.8) -- (0,4,0.8) -- (6,4,0.8) -- cycle;
-         
+%
         \draw (0,4,0) -- (0,4,0.8);
-        
+%
         \draw (3.9,0,0) -- (3.9,0,0.8);
         \draw (6,4,0) -- (6,4,0.8);
 
         % \draw[style=dashed, color=gray] (6,0,-3) -- (0,0,-3) -- (0,4,-3);
         \draw[style=dashed, color=gray] (0,0,0) -- (0,0,1.5);
         \draw[style=dashed, color=gray] (3.9,0,0.8) -- (3.9,0,1.5);
-        
+%
         \draw[style=dashed, color=gray] (0,4,0) -- (0,4,-1.);
         \draw[style=dashed, color=gray] (6,4,0.8) -- (6,4,-1.);
-        
+%
         \draw[stealth-stealth] (0,4,-0.5)--node[above]{$L_1$}(6,4,-0.5);
-        
+%
         \draw[stealth-stealth] (0,0,1.3)--node[below]{$L_2$}(3.9,0,1.3);
-        
+%
         \draw[style=dashed, color=gray] (0,0,0) -- (3.9,0,0);
-        
+%
         \draw[style=dashed, color=gray] (6,4,0.8) -- (7,4,0.8);
         \draw[style=dashed, color=gray] (6,4,0.0) -- (7,4,0.0);
         \draw[stealth-stealth] (7,4,0.8)--node[below,rotate=50]{K}(7,4,0.0);
@@ -395,8 +393,6 @@ This effect is especially remarkable if the wavemaker takes up only half of the 
         \draw[stealth-stealth] (-0.2,0,0.8) --node[above,rotate=90] {$H$} (-0.2,4,0.8);
         \draw[style=dashed, color=gray] (-0.3,0,0.8) -- (0.0,0,0.8);
         \draw[style=dashed, color=gray] (-0.3,4,0.8) -- (0.0,4,0.8);
-        
-        
         % \draw[<->] (0,4.1,-3) --node[above,] {$L_1 = 0.369$ m} (4,4.1,-3);
         % \draw[<->] (6.05,-0.05,0) --node[below,rotate=37] {$W = 0.3$ m} (6.05,-0.05,-3);
         % \draw[<->] (0,-0.1,0) --node[below,] {$L_2 = 0.6$ m} (6,-0.1,0);
@@ -438,15 +434,41 @@ With addition third dimension simulation problem complicated significantly. Ther
 
     Visual analysis of simulation show internal waves attractors destruction procedure. The attractor is formed in the period from 0 to 10 oscillation periods, then from 10 to 30 oscillation periods stable and attractor structure is observed and finally from 30 to 300 and belong difference of velocities become too big that waves overturn and incoming energy produce secondary waves.
 
-
+\newpage
 \subsection{Vortices visualisation}
 
-Vortices visualisation is a new way to visualize turbulent motions structure. For this purpose we use different methods.
+Vortices identification is a relatively new way to analyze the structure of turbulent motions. For this purpose several approach have been developed.
 
-The simplest attempt is to consider vorticity \cite{vortex} (Fig.~\ref{fig:vorticity}): $$\omega=|\textrm{rot}\,\vec{v}|$$
-It is quick and simple method that however can yield false-positive identification. For instance, Couette flow will be identified as homogeneous vortex since its curl is constant over the domain.
+\begin{figure}[H]
+\begin{multicols}{2}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figs/VortexRot.png}
+    \caption{Vorticity}
+    \label{fig:vorticity}
+    \hfill
+    \includegraphics[width=0.5\textwidth]{Figs/VortexDelta.png}
+    \caption{$\Delta$-method}
+    \label{fig:Delta}
+\end{multicols}
+\end{figure}
 
-Another method is so-called $\Delta$-method \cite{vortex}. Let us consider eigenvalue problem for velocity gradient tensor $A=\nabla\otimes  \vec v$:
+The simplest method is the analysis of vorticity \cite{vortex} (Fig.~\ref{fig:vorticity}): $$\omega=\textrm{rot}\,\vec{v}$$ and stream function.
+This approach however can result in ambiguous conclusions. For instance, laminar plane Couette has a constant finite vorticity everywhere, and still, there is no structure, which could be identified as ``vortices'' or ``swirls'' in this type of flow.
+
+\begin{figure}[H]
+\begin{multicols}{2}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figs/VortexQ.png}
+    \caption{$Q$-method}
+    \label{fig:Q}
+    \hfill
+    \includegraphics[width=0.5\textwidth]{Figs/VortexLambdaCi.png}
+    \caption{$\lambda_{ci}$-method}
+    \label{fig:Lci}
+    \end{multicols}
+\end{figure}
+
+Another approach is a so-called $\Delta$-method \cite{vortex}. Let us consider eigenvalue problem for velocity gradient tensor $A=\nabla\otimes  \vec v$:
 
 % \begin{equation}
 %  A:= \nabla\otimes  \vec v =
@@ -459,71 +481,21 @@ Another method is so-called $\Delta$-method \cite{vortex}. Let us consider eigen
   \text{det} \,( A -\lambda \mathbb E)=0
 \end{equation}  
 
-In 3D we have the following characteristic equation: $$\lambda^3+P\lambda^2+Q\lambda+R,$$ \noindent which discriminant is $D=-108\left( \frac{Q^2}{4} +\frac{P^3}{27}\right)$. 
+In three-dimensional setup we have the following characteristic equation: $$\lambda^3+P\lambda^2+Q\lambda+R,$$ 
+\noindent where discriminant $D=-108\left( \frac{Q^2}{4} +\frac{P^3}{27}\right)$. 
 
+Let's define $$\Delta=\left(\frac{Q}{2}\right)^2 +\left(\frac{P}{3}\right)^3.$$
 
-Let $$\Delta=\left(\frac{Q}{2}\right)^2 +\left(\frac{P}{3}\right)^3$$
+Then 
+$ \Delta > 0  \Leftrightarrow  D < 0$ corresponds to the presence of two complex-conjugated roots, and can be interpreted as spiral-shaped stream tubes.
 
-$ \Delta > 0  \Leftrightarrow  D < 0$ means the presence of two complex-conjugated roots, i.e. current tubes is spiral-like shaped.
-
-The problem arises in 2-dimensional problem, where the equation has less order:
+In two-dimensional setup, the equation has lower order:
 $$\lambda^2+P\lambda+Q=0,$$
 
-discriminant $D=P^2-4Q$. Thus in 2D we will consider $-D\equiv 4Q-P^2$ as $\Delta$ (Fig.~\ref{fig:Delta}).
+\noindent
+where discriminant $D=P^2-4Q$. Thus in 2D we may take $-D\equiv 4Q-P^2$ as $\Delta$ (Fig.~\ref{fig:Delta}).
 
-This method requires more computational resources than vorticity. It can be improved using $Q$-method \cite{vortex}\cite{Hussain}. Let's define:
-
-\begin{equation}
- S=\frac{1}{2}\left(A +A\,^T \right) ,\quad \Omega=\frac{1}{2} \left( A - A\,^T\right) 
-  \label{NSdim}
-\end{equation}
-Then
-\begin{equation}
-  Q=\frac{1}{2} \left( ||\Omega||^2_F-||S||^2_F \right) 
-  \label{eqn:Q}
- \end{equation}
-For the more courtesy we remind that norm in (\ref{eqn:Q}) is understood in sense of Frobenius norm, i.e. $||A||^2_F=\sum \limits_{i=1}^n \sum \limits_{j=1}^n a_{ij}^2$, where $n$ is problem dimention.
-
-The vortex regions are those with $Q>0$. It is harder condition then that for the $\Delta$, so $Q$-identified vortex regions a priori contain in $\Delta$-identified ones (fig.~\ref{fig:Q}).
-
-For the fourth method let's calculate eigenvalues of $A$. For the vortex presence it's necessary for two complex-conjugation values to exist. Their imaginary parts $\pm\lambda_{ci}$ that can be considered as the identification method itself \cite{vortex}, fig.~\ref{fig:Lci}.
-
-If we consider eigenvalues of $S^2+\Omega^2$~matrix, we obtain $\lambda_2$-method. They cannot be complex, so for the vortex two negative ones are implied. Let's sort them in descending order and consider the second one as a criterion\cite{vortex,Hussain}. For the visibility we will display it with the opposite sign (hence 'tis negative), fig.~\ref{fig:L2}.
-
-The most modern method is Luitex-method \cite{vortex}.
-
-Let $\vec r \longleftrightarrow \lambda_r$~-- eigenvector corresponding to real eigenvalue $\lambda_r, ||\vec r||=1$. Then Luitex-vector is introduced as that with the direction of $\vec r$ and value
- $$R=(\vec \omega,\vec r)-\sqrt{(\vec \omega,\vec r)^2-4\lambda_{ci}^2},$$\noindent where $\vec \omega$ is vorticity. Wherein it's supposed that $(\vec \omega,\vec r)>0$.
- 
- In 2-dimensional problem Luitex-vector must be re-defined. Obviously, vorticity is orthogonal to the domain plane as well as $\vec r$. Hence we consider only value
- 
- $$R=|\omega|- \sqrt{\omega^2-4\lambda_{ci}^2},$$\noindent where $\omega=\frac{\partial v_y}{\partial v_x}-\frac{\partial v_x}{\partial v_y}$~-- two-dimensional vorticity (fig.~\ref{fig:Liu}).
-
-\begin{figure}
-\begin{multicols}{2}
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figs/VortexRot.png}
-    \caption{vorticity}
-    \label{fig:vorticity}
-    \hfill
-    \includegraphics[width=0.5\textwidth]{Figs/VortexDelta.png}
-    \caption{$\Delta$-method}
-    \label{fig:Delta}
-\end{multicols}
-\end{figure}
-
-\begin{figure}
-\begin{multicols}{2}
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figs/VortexQ.png}
-    \caption{$Q$-method}
-    \label{fig:Q}
-    \hfill
-    \includegraphics[width=0.5\textwidth]{Figs/VortexLambdaCi.png}
-    \caption{$\lambda_{ci}$-method}
-    \label{fig:Lci}
-    \end{multicols}
-\end{figure}
+This method requires more computational resources than vorticity, but the vortices as rotating objects can be readily identified. It can be improved using $Q$-method \cite{vortex}\cite{Hussain}. Let's define:
 
 \begin{figure}
 \begin{multicols}{2}
@@ -538,15 +510,42 @@ Let $\vec r \longleftrightarrow \lambda_r$~-- eigenvector corresponding to real 
     \end{multicols}
 \end{figure}
 
-Howbeit mentioned hereabove methods are aimed to visualize vortex regions, they can be sucsessfully applied for the attractor detection, at least at small enough amplitudes.
+\begin{equation}
+ S=\frac{1}{2}\left(A +A\,^T \right) ,\quad \Omega=\frac{1}{2} \left( A - A\,^T\right) 
+  \label{NSdim}
+\end{equation}
+Then
+\begin{equation}
+  Q=\frac{1}{2} \left( ||\Omega||^2_F-||S||^2_F \right) 
+  \label{eqn:Q}
+ \end{equation}
+The norm in (\ref{eqn:Q}) is understood in sense of Frobenius norm, i.e. $||A||^2_F=\sum \limits_{i=1}^n \sum \limits_{j=1}^n a_{ij}^2$, where $n$ is problem dimension.
+
+The vortex regions are those with $Q>0$. It is a harder restriction then that for the $\Delta$, so $Q$-identified vortex regions a priori included in $\Delta$-identified ones (fig.~\ref{fig:Q}).
+
+For the fourth method let's calculate eigenvalues of $A$. For the vortex presence it's necessary for two complex-conjugation values to exist. Their imaginary parts $\pm\lambda_{ci}$ that can be considered as the identification method itself \cite{vortex}, fig.~\ref{fig:Lci}.
+
+If we consider eigenvalues of $S^2+\Omega^2$~matrix, we obtain $\lambda_2$-method. They cannot be complex, so for the vortex two negative ones are implied. Let's sort them in descending order and consider the second one as a criterion\cite{vortex,Hussain}. For the visibility we will display it with the opposite sign (hence 'tis negative), fig.~\ref{fig:L2}.
+
+The most recent approach is Luitex-method \cite{vortex}.
+
+Let $\vec r \longleftrightarrow \lambda_r$~-- eigenvector corresponding to real eigenvalue $\lambda_r, ||\vec r||=1$. Then Luitex-vector is introduced as the one with the direction of $\vec r$ and value
+ $$R=(\vec \omega,\vec r)-\sqrt{(\vec \omega,\vec r)^2-4\lambda_{ci}^2},$$\noindent where $\vec \omega$ is vorticity. Wherein it's supposed that $(\vec \omega,\vec r)>0$.
+ 
+ In 2-dimensional problem Luitex-vector must be re-defined. Obviously, vorticity is orthogonal to the domain plane as well as $\vec r$. Hence we consider only value
+ 
+ $$R=|\omega|- \sqrt{\omega^2-4\lambda_{ci}^2},$$\noindent where $\omega=\frac{\partial v_y}{\partial v_x}-\frac{\partial v_x}{\partial v_y}$~-- two-dimensional vorticity (fig.~\ref{fig:Liu}).
+
+Though the described methods are aimed to visualize vortex regions, they can be applied for the estimation of the properties of the attractors.
 
 \section{Conclusions}
 
-As a result of numerical simulation of fluid dynamics, one obtains a large volume of data. Over time, problems become more complex and require more resources to generate and process it. Raw data is difficult to interpret without special software. At this article open-source software considered. Open-source software corresponds to the principles of scientific character as well as possible due to highly modifiable, source code transparency and high requirements for user competencies.
+As a result of direct numerical simulation of internal wave turbulence, one gets a large volume of data. It is now possible to get high-resolution data, and resolve the small-scale flows. At the same time, it requires more computational resources to generate and process it. Raw data is difficult to interpret without special software. In this paper we consider some open-source software for flow analysis and visualization. The open-source software complies with the principles of scientific credibility, ability to modify and reuse the code, and source code transparency.
+% and high requirements for user competencies.
 
 To obtain hydrodynamic fields OpenFOAM was used, but raw data takes up a lot of space on hard drives and generate a lot of files especially in simulations with particles. Sometimes it can be critical. At this paper functionObject 'vtkWrite' was used to resolve this problem. For simulation with particles 'cloudWrite' function object was used which generate much fewer files then raw pure OpenFOAM output. Additionally, data was collected at key nodes for Fourier analysis and construction of time-frequency diagrams with 'postProcWrite' functionObject.
 
-Problem of internal gravity waves attractor simulation is complicated by the fact that it is required to simulate significant periods of model time. 24 processors for $300 \times 200$ computational domain needs for simulation of 2D problem. Simulation of a 2D problem lasted for 5 days on unihub cluster \cite{Unihub2014}. 3D problem required more detailed mesh additionally to the 3th dimmention. 196 processors for $375 \times 250 \times 16$ domain. Simulation of 450 seconds lasted for 7 days on The Lobachevsky supercomputer.
+Problem of internal gravity waves attractor simulation is complicated by the fact that it is required to simulate significant periods of model time. 24 processors for $300 \times 200$ computational domain needs for simulation of 2D problem. Simulation of a 2D problem lasted for 5 days on Unihub cluster \cite{Unihub2014}. 3D problem required more detailed mesh additionally to the 3-d dimension. 196 processors for $375 \times 250 \times 16$ domain. Simulation of 450 seconds lasted for 7 days on The Lobachevsky supercomputer.
 
 Processing of simulation results required many different instruments for calculations and visualisation.
 Fourier analysis was provided with python package scipy \cite{scipy}, and drawing with matplotlib \cite{matplotlib}. Visualisation was obtained by paraview \cite{paraview}. Scripts for vortices visualisation was developed with python \cite{python}. 
