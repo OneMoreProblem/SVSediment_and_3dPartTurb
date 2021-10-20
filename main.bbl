@@ -63,6 +63,50 @@
 \newblock
   \href{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/9781118856024.ch10}{https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/9781118856024.ch10}.
 
+\bibitem{2013BourgetDauxoisJoubaudOdier}
+\selectlanguageifdefined{english}
+Experimental study of parametric subharmonic instability for internal plane
+  waves~/ Baptiste~Bourget, Thierry~Dauxois, Sylvain~Joubaud, Philippe~Odier.
+  \BibDash
+\newblock 2013. \BibDash Apr. \BibDash
+\newblock Vol. 723. \BibDash
+\newblock P.~1--20. \BibDash
+\newblock Access mode: \BibUrl{https://doi.org/10.1017/jfm.2013.78}.
+
+\bibitem{2016DossmannBourgetBrouzetDauxoisJoubaudOdier}
+\selectlanguageifdefined{english}
+{Mixing by internal waves quantified using combined PIV/PLIF technique}~/
+  Y.~{Dossmann}, B.~{Bourget}, C.~{Brouzet} et~al.~//
+  \href{http://dx.doi.org/10.1007/s00348-016-2212-y}{\BibEmph{Experiments in
+  Fluids}}. \BibDash
+\newblock 2016. \BibDash Aug. \BibDash
+\newblock Vol.~57, no.~8. \BibDash
+\newblock P.~132. \BibDash
+\newblock 1805.04358.
+
+\bibitem{2019DavisDauxoisJaminJoubaud}
+\selectlanguageifdefined{english}
+Energy budget in internal wave attractor experiments~/ Géraldine~Davis,
+  Thierry~Dauxois, Timothée~Jamin, Sylvain~Joubaud~//
+  \href{http://dx.doi.org/10.1017/jfm.2019.741}{\BibEmph{Journal of Fluid
+  Mechanics}}. \BibDash
+\newblock 2019. \BibDash
+\newblock Vol. 880. \BibDash
+\newblock P.~743–763.
+
+\bibitem{2020HusseiniVarmaDauxoisJoubaudOdierMathur}
+\selectlanguageifdefined{english}
+Experimental study on superharmonic wave generation by resonant interaction
+  between internal wave modes~/ Pauline~Husseini, Dheeraj~Varma,
+  Thierry~Dauxois et~al.~//
+  \href{http://dx.doi.org/10.1103/PhysRevFluids.5.074804}{\BibEmph{Phys. Rev.
+  Fluids}}. \BibDash
+\newblock 2020. \BibDash Jul. \BibDash
+\newblock Vol.~5. \BibDash
+\newblock P.~074804. \BibDash
+\newblock Access mode:
+  \BibUrl{https://link.aps.org/doi/10.1103/PhysRevFluids.5.074804}.
+
 \bibitem{2014LeePaolettiSwinneyMorrisonExperDeterIWpower}
 \selectlanguageifdefined{english}
 Experimental determination of radiated internal wave power without pressure

@@ -8,49 +8,50 @@ Database file #1: rpz.bib
 Database file #2: internalwaves.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in 2005Munk9IW
+Warning--empty journal in 2013BourgetDauxoisJoubaudOdier
 Warning--empty journal in Unihub2014
 Warning--empty year in scipy
 Warning--empty year in matplotlib
 Warning--empty year in python
-You've used 23 entries,
+You've used 27 entries,
             4636 wiz_defined-function locations,
-            1505 strings with 15530 characters,
-and the built_in function-call counts, 8501 in all, are:
-= -- 993
-> -- 203
-< -- 38
-+ -- 68
-- -- 45
-* -- 544
-:= -- 812
-add.period$ -- 99
-call.type$ -- 23
+            1541 strings with 16801 characters,
+and the built_in function-call counts, 10393 in all, are:
+= -- 1220
+> -- 271
+< -- 47
++ -- 88
+- -- 61
+* -- 661
+:= -- 996
+add.period$ -- 118
+call.type$ -- 27
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 473
-empty$ -- 953
-format.name$ -- 45
-if$ -- 2270
+cite$ -- 33
+duplicate$ -- 578
+empty$ -- 1126
+format.name$ -- 61
+if$ -- 2777
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 27
 missing$ -- 0
-newline$ -- 170
-num.names$ -- 54
-pop$ -- 128
+newline$ -- 201
+num.names$ -- 66
+pop$ -- 151
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 385
+skip$ -- 499
 stack$ -- 0
-substring$ -- 327
-swap$ -- 362
-text.length$ -- 20
+substring$ -- 382
+swap$ -- 452
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 48
-width$ -- 25
-write$ -- 359
-(There were 5 warnings)
+warning$ -- 6
+while$ -- 58
+width$ -- 29
+write$ -- 432
+(There were 6 warnings)
